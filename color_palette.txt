@@ -1,0 +1,2 @@
+dark grey: #343432
+blue: #0094ff
