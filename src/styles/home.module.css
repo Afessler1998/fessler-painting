@@ -1,3 +1,8 @@
+.underConstruction {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-xlarge);
+}
+
 .mainParagraph {
     font-family: var(--font-family-secondary);
     font-size: var(--font-size-medium);
@@ -8,7 +13,7 @@
 }
 
 .serviceSection {
-    
+
 }
 
 .sectionHeading {

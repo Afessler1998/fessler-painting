@@ -8,6 +8,8 @@ const home = () => {
     return (
         <>
             <Header />
+                <h1 className={styles.underConstruction}>Fessler Painting is currently under construction.
+                Please visit again at a future date to view the full completed website</h1>
                 <p className={styles.mainParagraph}>
                     At Fessler Painting, we specialize in transforming walls and spaces with our interior and exterior painting
                     services. Our skilled professionals have 10 years of experience and are dedicated to delivering exceptional
