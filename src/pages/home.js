@@ -8,6 +8,7 @@ const home = () => {
     return (
         <>
             <Header />
+                {/*REMOVE THIS BEFORE PUBLISHING SITE*/}
                 <h1 className={styles.underConstruction}>Fessler Painting is currently under construction.
                 Please visit again at a future date to view the full completed website</h1>
                 <p className={styles.mainParagraph}>

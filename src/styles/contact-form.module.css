@@ -1,6 +1,12 @@
 .formContainer {
     display: flex;
     flex-direction: column;
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-medium);
+}
+
+.label {
+
 }
 
 .input {
@@ -10,4 +16,9 @@
 
 .submitBtn {
     
+}
+
+.successMsg {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-medium);
 }
