@@ -1,0 +1,9 @@
+.mainHeading {
+    font-size: var(--font-size-large);
+    font-family: var(--font-family-primary);
+}
+
+.mainParagraph {
+    font-size: var(--font-size-medium);
+    font-family: var(--font-family-secondary);
+}

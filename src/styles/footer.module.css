@@ -1,0 +1,5 @@
+.footer {
+    background-color: var(--color-accent-500);
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-medium);
+}

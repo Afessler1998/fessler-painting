@@ -1,0 +1,13 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border: 1px solid gray;
+    margin-bottom: 1rem;
+}
+
+.submitBtn {
+    
+}

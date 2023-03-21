@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-medium);
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.headerLogo {
+    width: 4rem;
+}
+
+.heading {
+    font-size: var(--font-size-large);
+}
+
+.navButton {
+
+}
+
+.callUsCta {
+
+}
+
+.contactUsCta {
+
+}

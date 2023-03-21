@@ -1,0 +1,27 @@
+.mainHeading {
+    font-size: var(--font-size-large);
+    font-family: var(--font-family-primary);
+}
+
+.mainParagraph {
+    font-size: var(--font-size-medium);
+    font-family: var(--font-family-secondary);
+}
+
+.contactLink {
+    color: var(--color-accent-500);
+}
+
+.service {
+    
+}
+
+.serviceHeading {
+    font-size: var(--font-size-medium);
+    font-family: var(--font-family-primary);
+}
+
+.serviceDescription {
+    font-size: var(--font-size-small);
+    font-family: var(--font-family-secondary);
+}
