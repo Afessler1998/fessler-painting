@@ -6,11 +6,35 @@ import styles from '../styles/contact-form.module.css'
 const contactForm = () => {
 
     const [firstName, setFirstName] = useState('');
+    const [statusCode, setStatusCode] = useState(0);
+    const [message, setMessage] = useState('');
+
+    const nameRegex = /^[a-zA-Z]+$/;
+    const phoneRegex = /^(1\s?)?(\d{3}|\(\d{3}\))[\s\-]?\d{3}[\s\-]?\d{4}$/;
+    const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
     const handleSubmit = async (event) => {
-        event.preventDefault()
+        event.preventDefault();
 
-        //perform client side validation
+        if (!nameRegex.test(event.target.firstName.value) || !nameRegex.test(event.target.lastName.value)) {
+            alert('Please enter a valid name');
+            return;
+        }
+
+        if (!phoneRegex.test(event.target.phoneNumber.value)) {
+            alert('Please enter a valid phone number');
+            return;
+        }
+        
+        if (!emailRegex.test(event.target.email.value)) {
+            alert('Please enter a valid email');
+            return;
+        }
+
+        if (!event.target.message.value) {
+            alert('Please add a description of your project');
+            return;
+        }
     
         const data = {
             firstName: event.target.firstName.value,
@@ -33,8 +57,18 @@ const contactForm = () => {
         }
     
         const response = await fetch(endpoint, options);
+        const responseData = await response.json();
 
-        if (response.ok) setFirstName(data.firstName);
+        if (response.ok) {
+            if (statusCode !== 0) {
+                setStatusCode(0);
+                setMessage("");
+            }
+            setFirstName(data.firstName);
+        } else {
+            setStatusCode(response.status);
+            setMessage(responseData.data);
+        }
     }
 
     return (
@@ -58,6 +92,8 @@ const contactForm = () => {
 
                 <button type="submit" className={styles.submitBtn}>Submit</button>
             </form>
+            {statusCode === 400 && <p className={styles.errorMsg}>{message}</p>}
+            {statusCode === 500 && <p className={styles.errorMsg}>Something went wrong, please try again later</p>}
             {firstName && <p className={styles.successMsg}>Your contact info has been received, thank you for reaching out {firstName}!</p>}
             <Footer />
         </>
