@@ -1,8 +1,10 @@
 :root {
     --color-neutral-800: #343432;
+    --color-neutral-400: #7a7a7a;
     --color-neutral-200: #d4d6c9;
 
-    --color-accent-500: #0094ff;
+    --color-accent-500: #0095ff;
+    --color-accent-900: #0095ff7e;
 
     --font-family-primary: 'Raleway', sans-serif;
     --font-family-secondary: 'Raleway', sans-serif;
