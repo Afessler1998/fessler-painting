@@ -1,31 +1,152 @@
 .header {
-    display: flex;
-    align-items: center;
     font-family: var(--font-family-primary);
     font-size: var(--font-size-medium);
+    width: 100%;
 }
 
-.logoContainer {
+.headerTop {
+    display: flex;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-neutral-200);
+}
+
+.headerBottom {
     display: flex;
     align-items: center;
+    gap: 3rem;
+    padding: 1rem;
 }
 
 .headerLogo {
-    width: 4rem;
+    width: 6rem;
 }
 
 .heading {
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-xlarge);
+}
+
+.headingSelected {
+    font-size: var(--font-size-xlarge);
+    color: var(--color-accent-500);
+}
+
+.navList, .navListActive {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
 }
 
 .navButton {
-
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
+}
+  
+.navButton:hover, .heading:hover {
+    background: linear-gradient(to right, black 0%, black 50%, var(--color-accent-500) 50%, var(--color-accent-500) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 0.3s ease-in;
+    background-size: 200% 100%;
+    background-position: -100%;
 }
 
-.callUsCta {
-
+.selectedNavButton {
+    color: var(--color-accent-500);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
 }
 
-.contactUsCta {
+.phoneNumber {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-accent-500);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-weight: var(--font-weight-bold);
+    color: #fff;
+    margin-left: auto;
+    box-shadow: var(--color-accent-900) 0px 2px 5px;
+    transition-duration: 0.3s
+}
 
+.phoneNumber:hover {
+    color: #fff;
+    transition-duration: 0.3s;
+    transform: translate(0px, -4px);
+    box-shadow: var(--color-accent-900) 0px 4px 5px;
+}
+
+.phoneNumber:active {
+    color: #fff;
+    transition-duration: 0.15s;
+    transform: translate(0px, -1px);
+    box-shadow: var(--color-accent-900) 0px 2px 5px;
+}
+
+.menu, .menuActive {
+    display: none;
+}
+
+.menuBar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .heading, .headingSelected {
+        font-size: var(--font-size-large);
+    }
+
+    .phoneNumber {
+        font-size: var(--font-size-small);
+    }
+
+    .navList, .navListActive {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        gap: 0rem;
+        background-color: #fff;
+        width: 50%;
+        height: 100%;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .navListActive {
+        left: 0;
+    }
+
+    .navItem {
+        padding: 1rem;
+        border-bottom: 1px solid #eaeaea;
+        width: 100%;
+    }
+
+    .menu, .menuActive {
+        display: block;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .menuActive .menuBar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menuActive .menuBar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menuActive .menuBar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }

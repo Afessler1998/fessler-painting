@@ -1,8 +1,9 @@
 :root {
     --color-neutral-800: #343432;
     --color-neutral-400: #7a7a7a;
-    --color-neutral-200: #d4d6c9;
+    --color-neutral-200: #e1e1de;
 
+    --color-accent-100: #bee0f9;
     --color-accent-500: #0095ff;
     --color-accent-900: #0095ff7e;
 
@@ -13,10 +14,10 @@
     --font-weight-semibold: 400;
     --font-weight-bold: 700;
 
-    --font-size-small: 1.2rem;
-    --font-size-medium: 1.6rem;
-    --font-size-large: 2.4rem;
-    --font-size-xlarge: 3.2rem;
+    --font-size-small: 1.75rem;
+    --font-size-medium: 2.1rem;
+    --font-size-large: 2.8rem;
+    --font-size-xlarge: 3.5rem;
 }
 
 *,
