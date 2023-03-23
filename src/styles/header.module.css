@@ -6,7 +6,7 @@
 
 .headerTop {
     display: flex;
-    padding: 1rem;
+    padding: 1rem 4rem;
     border-bottom: 1px solid var(--color-neutral-200);
 }
 
@@ -14,19 +14,20 @@
     display: flex;
     align-items: center;
     gap: 3rem;
-    padding: 1rem;
+    padding: 1rem 4rem;
 }
 
 .headerLogo {
     width: 6rem;
 }
 
-.heading {
+.heading, .headingSelected {
     font-size: var(--font-size-xlarge);
+    flex-grow: 1;
+    letter-spacing: 0.2rem;
 }
 
 .headingSelected {
-    font-size: var(--font-size-xlarge);
     color: var(--color-accent-500);
 }
 
@@ -148,5 +149,15 @@
 
     .menuActive .menuBar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .headerTop {
+        padding: 1rem 2rem;
+    }
+
+    .headerBottom {
+        padding: 1rem 2rem;
     }
 }

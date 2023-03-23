@@ -15,7 +15,7 @@ const header = () => {
                 <a className={styles.phoneNumber} href="tel:515-238-4466"><div>515-238-4466</div></a>
             </div>
             <div className={styles.headerBottom}>
-                <Link href={"/"}><h1 className={pathname === "/interior-services" ? styles.headingSelected : styles.heading}>Fessler Painting</h1></Link>
+                <h1 className={pathname === "/" ? styles.headingSelected : styles.heading}><Link href={"/"}>Fessler Painting</Link></h1>
                 <ul className={active ? styles.navListActive : styles.navList}>
                     <li className={styles.navItem}>
                         <div className={pathname === "/interior-services" ? styles.selectedNavButton : styles.navButton}><Link href={"/interior-services"}>Interior</Link></div>
