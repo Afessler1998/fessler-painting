@@ -1,6 +1,10 @@
+.mainTextContainer {
+    padding: 2rem 4rem;
+}
+
 .mainHeading {
     font-size: var(--font-size-large);
-    font-family: var(--font-family-primary);
+    font-family: var(--font-family-primary); 
 }
 
 .mainParagraph {
@@ -12,16 +16,37 @@
     color: var(--color-accent-500);
 }
 
+.servicesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem 4rem;
+}
+
 .service {
-    
+    border: 1px solid var(--color-neutral-200);
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 .serviceHeading {
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-large);
     font-family: var(--font-family-primary);
+    color: var(--color-accent-500);
 }
 
 .serviceDescription {
     font-size: var(--font-size-small);
     font-family: var(--font-family-secondary);
+}
+
+@media screen and (max-width: 768px) {
+    .mainParagraph {
+        font-size: var(--font-size-small);
+    }
+
+    .servicesContainer {
+        font-size: var(--font-size-medium);
+        grid-template-columns: 1fr;
+    }
 }

@@ -11,7 +11,7 @@ const header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.headerTop}>
-                <h1 className={styles.heading}>Fessler Painting</h1>
+                <h1 className={styles.heading}><Link href="/">Fessler Painting</Link></h1>
                 <img src="/fessler-painting-logo.svg" alt="Fessler Painting Logo" className={styles.headerLogo} />
                 <a className={styles.phoneNumber} href="tel:515-238-4466"><div>515-238-4466</div></a>
             </div>

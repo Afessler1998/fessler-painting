@@ -1,3 +1,7 @@
+.mainTextContainer {
+    padding: 2rem 4rem;
+}
+
 .mainHeading {
     font-size: var(--font-size-large);
     font-family: var(--font-family-primary);
