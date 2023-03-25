@@ -35,7 +35,7 @@ const interiorServices = () => {
                     </p>
                 </div>
                 <div className={styles.service}>
-                    <h3 className={styles.serviceHeading}>Trim Painting and Staining</h3>
+                    <h3 className={styles.serviceHeading}>Trim and Doors</h3>
                     <p className={styles.serviceDescription}>
                         Painting or staining your trim can enhance the overall aesthetic appeal of your home's interior.
                         Freshly painted or stained trim adds a crisp and polished look,
@@ -45,7 +45,7 @@ const interiorServices = () => {
                     </p>
                 </div>
                 <div className={styles.service}>
-                    <h3 className={styles.serviceHeading}>Cabinet Painting and Staining</h3>
+                    <h3 className={styles.serviceHeading}>Cabinets</h3>
                     <p className={styles.serviceDescription}>
                         Painting or staining your cabinets is an affordable way to give your kitchen or bathroom a
                         fresh and updated look without the expense of a full renovation. With a wide range of colors
@@ -54,7 +54,7 @@ const interiorServices = () => {
                     </p>
                 </div>
                 <div className={styles.service}>
-                    <h3 className={styles.serviceHeading}>Hardwood Floor Finishing</h3>
+                    <h3 className={styles.serviceHeading}>Hardwood Floors</h3>
                     <p className={styles.serviceDescription}>
                         Properly finishing your hardwood floors not only enhances their natural beauty but also
                         protects them from wear and tear. A quality finish will make your floors more durable, easy to clean,

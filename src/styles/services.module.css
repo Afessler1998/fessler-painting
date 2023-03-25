@@ -4,7 +4,8 @@
 
 .mainHeading {
     font-size: var(--font-size-large);
-    font-family: var(--font-family-primary); 
+    font-family: var(--font-family-primary);
+    text-align: center;
 }
 
 .mainParagraph {
@@ -48,5 +49,15 @@
     .servicesContainer {
         font-size: var(--font-size-medium);
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 493px) {
+    .mainTextContainer {
+        padding: 2rem 2rem;
+    }
+
+    .servicesContainer {
+        padding: 1rem 2rem;
     }
 }

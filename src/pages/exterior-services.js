@@ -28,7 +28,7 @@ const exteriorServices = () => {
             </div>
             <div className={styles.servicesContainer}>
                 <div className={styles.service}>
-                    <h3 className={styles.serviceHeading}>Fence Painting and Staining</h3>
+                    <h3 className={styles.serviceHeading}>Fences</h3>
                     <p className={styles.serviceDescription}>
                         Having your fence painted or stained can not only enhance its visual appeal but also protect it
                         against weather-related damage. A fresh coat of paint or stain can revive the look of your fence,
@@ -39,7 +39,7 @@ const exteriorServices = () => {
                     </p>
                 </div>
                 <div className={styles.service}>
-                    <h3 className={styles.serviceHeading}>Deck Painting and Staining</h3>
+                    <h3 className={styles.serviceHeading}>Decks</h3>
                     <p className={styles.serviceDescription}>
                         Deck painting or staining can revitalize the look of your outdoor space while also protecting
                         it from wear and tear. A fresh coat of paint or stain can help to prevent your deck from rotting,
