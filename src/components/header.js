@@ -11,11 +11,11 @@ const header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.headerTop}>
-                <Link href={"/"}><img src="/fessler-painting-logo.svg" alt="Fessler Painting Logo" className={styles.headerLogo} /></Link>
+                <h1 className={styles.heading}>Fessler Painting</h1>
+                <img src="/fessler-painting-logo.svg" alt="Fessler Painting Logo" className={styles.headerLogo} />
                 <a className={styles.phoneNumber} href="tel:515-238-4466"><div>515-238-4466</div></a>
             </div>
             <div className={styles.headerBottom}>
-                <h1 className={pathname === "/" ? styles.headingSelected : styles.heading}><Link href={"/"}>Fessler Painting</Link></h1>
                 <ul className={active ? styles.navListActive : styles.navList}>
                     <li className={styles.navItem}>
                         <div className={pathname === "/interior-services" ? styles.selectedNavButton : styles.navButton}><Link href={"/interior-services"}>Interior</Link></div>
