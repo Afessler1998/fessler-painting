@@ -12,3 +12,9 @@
     font-size: var(--font-size-medium);
     font-family: var(--font-family-secondary);
 }
+
+@media screen and (max-width: 493px) {
+    .mainTextContainer {
+        padding: 2rem 2rem;
+    }
+}

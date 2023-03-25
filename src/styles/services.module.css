@@ -47,8 +47,11 @@
     }
 
     .servicesContainer {
-        font-size: var(--font-size-medium);
         grid-template-columns: 1fr;
+    }
+
+    .serviceHeading {
+        font-size: var(--font-size-medium);
     }
 }
 

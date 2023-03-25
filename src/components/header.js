@@ -16,6 +16,7 @@ const header = () => {
                 <a className={styles.phoneNumber} href="tel:515-238-4466"><div>515-238-4466</div></a>
             </div>
             <div className={styles.headerBottom}>
+                <div className={styles.tagline}>Transforming Walls, Transforming Spaces</div>
                 <ul className={active ? styles.navListActive : styles.navList}>
                     <li className={styles.navItem}>
                         <div className={pathname === "/interior-services" ? styles.selectedNavButton : styles.navButton}><Link href={"/interior-services"}>Interior</Link></div>
