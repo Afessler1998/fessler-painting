@@ -60,6 +60,7 @@
 }
 
 .ctaImg {
+    object-fit: cover;
     width: 100%;
 }
 
@@ -169,12 +170,24 @@
 }
 
 @media screen and (max-width: 1080px) {
+    .ctaBox {
+        padding: 2rem;
+    }
+
     .ctaHeading {
         font-size: var(--font-size-large);
     } 
 
     .ctaText {
         font-size: var(--font-size-medium);
+    }
+
+    .mainSection {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+                            "main-paragraph main-paragraph"
+                            "service-section-1 service-section-2";
     }
 }
 
@@ -186,7 +199,6 @@
 
     .ctaBox {
         margin: 0;
-        padding: 2rem;
         width: 80%;
     }
 
@@ -206,11 +218,12 @@
     }
 
     .mainSection {
-        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-template-areas: 
-                            "main-paragraph main-paragraph"
-                            "service-section-1 service-section-2";
+        grid-template-areas: "main-paragraph"
+                            "service-section-1"
+                            "service-section-2";
     }
 
     .mainParagraph {
@@ -241,24 +254,19 @@
     }
 
     .ctaHeading {
-        font-size: var(--font-size-small);
+        font-size: var(--font-size-medium);
     }
 
     .ctaText {
-        font-size: var(--font-size-xsmall);
+        font-size: var(--font-size-small);
     }
 
     .ctaButton {
-        font-size: var(--font-size-xsmall);
+        font-size: var(--font-size-small);
     }
 
-    .mainSection {
-        padding: 2rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "main-paragraph"
-                            "service-section-1"
-                            "service-section-2";
+    .ctaImg {
+        height: 250px;
     }
 
     .mainParagraph {
@@ -285,23 +293,5 @@
 @media screen and (max-width: 375px) {    
     .serviceSectionImg {
         height: 250px;
-    }
-}
-
-@media screen and (max-width: 349px) {    
-    .serviceSectionImg {
-        height: 250px;
-    }
-
-    .ctaHeading {
-        font-size: var(--font-size-xsmall);
-    }
-
-    .ctaText {
-        font-size: var(--font-size-xxsmall);
-    }
-
-    .ctaButton {
-        font-size: var(--font-size-xxsmall);
     }
 }
