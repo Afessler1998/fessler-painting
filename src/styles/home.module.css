@@ -1,5 +1,62 @@
 .ctaContainer {
     margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.ctaBox {
+    position: absolute;
+    background-color: rgba(59, 59, 59, 0.8);
+    border-radius: 5px;
+    padding: 4rem;
+    margin-left: 6rem;
+    width: 48%;
+}
+
+.ctaHeading {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-xlarge);
+    color: var(--color-white);
+    width: fit-content;
+}
+
+.ctaText {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-large);
+    color: var(--color-white);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.ctaButton {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    background-color: var(--color-accent-500);
+    color: var(--color-white);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    box-shadow: var(--color-accent-900) 0px 2px 5px;
+    transition-duration: 0.3s;
+    width: fit-content;
+}
+
+.ctaButton:hover {
+    color: var(--color-white);
+    transition-duration: 0.3s;
+    transform: translate(0px, -4px);
+    box-shadow: var(--color-accent-900) 0px 4px 5px;
+}
+
+.ctaButton:active {
+    color: var(--color-white);
+    transition-duration: 0.15s;
+    transform: translate(0px, -1px);
+    box-shadow: var(--color-accent-900) 0px 2px 5px;
 }
 
 .ctaImg {
@@ -111,7 +168,42 @@
     width: 3rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
+    .ctaHeading {
+        font-size: var(--font-size-large);
+    } 
+
+    .ctaText {
+        font-size: var(--font-size-medium);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ctaContainer {
+        justify-content: center;
+    }
+
+    .ctaBox {
+        margin: 0;
+        padding: 2rem;
+        width: 80%;
+    }
+
+    .ctaHeading {
+        font-size: var(--font-size-medium);
+    }
+
+    .ctaText {
+        font-size: var(--font-size-small);
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .ctaButton {
+        font-size: var(--font-size-small);
+        padding: 0.5rem 1rem;
+    }
+
     .mainSection {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
@@ -138,6 +230,23 @@
 }
 
 @media screen and (max-width: 493px) {
+    .ctaBox {
+        width: calc(100% - 4rem);
+        padding: 1rem;
+    }
+
+    .ctaHeading {
+        font-size: var(--font-size-small);
+    }
+
+    .ctaText {
+        font-size: var(--font-size-xsmall);
+    }
+
+    .ctaButton {
+        font-size: var(--font-size-xsmall);
+    }
+
     .mainSection {
         padding: 2rem;
         grid-template-columns: 1fr;
@@ -171,5 +280,23 @@
 @media screen and (max-width: 375px) {    
     .serviceSectionImg {
         height: 250px;
+    }
+}
+
+@media screen and (max-width: 349px) {    
+    .serviceSectionImg {
+        height: 250px;
+    }
+
+    .ctaHeading {
+        font-size: var(--font-size-xsmall);
+    }
+
+    .ctaText {
+        font-size: var(--font-size-xxsmall);
+    }
+
+    .ctaButton {
+        font-size: var(--font-size-xxsmall);
     }
 }

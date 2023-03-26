@@ -9,6 +9,15 @@ const home = () => {
         <>
             <Header />
                 <div className={styles.ctaContainer}>
+                    <div className={styles.ctaBox}>
+                        <h3 className={styles.ctaHeading}>Fessler Painting,</h3>
+                        <p className={styles.ctaText}>
+                            Proudly serving the Des Moines area with unparalleled expertise and craftsmanship
+                        </p>
+                        <Link href="/contact-form">
+                            <div className={styles.ctaButton}>Get your free estimate!</div>
+                        </Link>
+                    </div>
                     <img src="/stock-photo-home-exterior-2.png" alt="home exterior" className={styles.ctaImg} />
                 </div>
                 <div className={styles.mainSection}>
