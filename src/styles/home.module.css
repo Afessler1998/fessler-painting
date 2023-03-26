@@ -9,8 +9,8 @@
     background-color: rgba(59, 59, 59, 0.8);
     border-radius: 5px;
     padding: 4rem;
-    margin-left: 6rem;
-    width: 48%;
+    margin-left: 4rem;
+    width: 50%;
 }
 
 .ctaHeading {
@@ -181,6 +181,7 @@
 @media screen and (max-width: 768px) {
     .ctaContainer {
         justify-content: center;
+        margin-bottom: 2rem;
     }
 
     .ctaBox {
