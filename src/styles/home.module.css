@@ -68,8 +68,8 @@
     display: grid;
     grid-template-columns: 3fr 2fr 2fr;
     grid-template-areas: "main-paragraph service-section-1 service-section-2";
-    gap: 3rem;
-    padding: 0 4rem 1rem 4rem;
+    gap: 2rem;
+    padding: 0 4rem 2rem 4rem;
 }
 
 .mainParagraph {
