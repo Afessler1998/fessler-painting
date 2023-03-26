@@ -17,7 +17,7 @@ const whyUs = () => {
                     durable result. As a licensed and insured painting contractor, we are committed to delivering exceptional
                     customer service and exceeding your expectations every step of the way. Whether you need interior or
                     exterior painting, fence or deck painting, power washing, or wallpaper removal, we have the experience and
-                    expertise to get the job done right. Let us help you transform your property with our tagline:
+                    expertise to get the job done right. Let us transform your property with our tagline:
                     "Transforming walls, transforming spaces".
                 </p>
             </div>

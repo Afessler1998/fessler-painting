@@ -5,6 +5,7 @@
     --color-neutral-800: #343432;
     --color-neutral-400: #7a7a7a;
     --color-neutral-200: #e1e1de;
+    --color-white: #ffffff;
 
     --color-accent-100: #bee0f9;
     --color-accent-500: #0095ff;
@@ -18,8 +19,10 @@
     --font-weight-semibold: 400;
     --font-weight-bold: 700;
 
+    --font-size-xxsmall: 1.2rem;
     --font-size-xsmall: 1.4rem;
     --font-size-small: 1.75rem;
+    --font-size-smedium: 2rem;
     --font-size-medium: 2.1rem;
     --font-size-large: 3rem;
     --font-size-xlarge: 5rem;

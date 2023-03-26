@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: flex-end;
     gap: 3rem;
-    padding: 1rem 4rem;
+    padding: 2rem 4rem;
 }
 
 .headerLogo {
@@ -71,21 +71,21 @@
     border-radius: 5px;
     padding: 1rem 2rem;
     font-weight: var(--font-weight-bold);
-    color: #fff;
+    color: var(--color-white);
     margin-left: auto;
     box-shadow: var(--color-accent-900) 0px 2px 5px;
     transition-duration: 0.3s
 }
 
 .phoneNumber:hover {
-    color: #fff;
+    color: var(--color-white);
     transition-duration: 0.3s;
     transform: translate(0px, -4px);
     box-shadow: var(--color-accent-900) 0px 4px 5px;
 }
 
 .phoneNumber:active {
-    color: #fff;
+    color: var(--color-white);
     transition-duration: 0.15s;
     transform: translate(0px, -1px);
     box-shadow: var(--color-accent-900) 0px 2px 5px;
@@ -125,7 +125,7 @@
         top: 0;
         flex-direction: column;
         gap: 0rem;
-        background-color: #fff;
+        background-color: var(--color-white);;
         width: 50%;
         height: 100%;
         transition: 0.3s;
@@ -172,7 +172,7 @@
     }
 
     .heading {
-        font-size: 2rem;
+        font-size: var(--font-size-smedium);
     }
 
     .headerLogo {
@@ -191,7 +191,7 @@
 
 @media screen and (max-width: 350px) {
     .phoneNumber {
-        font-size: 1.2rem;
+        font-size: var(--font-size-xxsmall);
         padding: 0.5rem 1rem;
     }
 }
@@ -200,12 +200,8 @@
     .heading {
         font-size: 1.5rem;
     }
-    .phoneNumber {
-        font-size: 1.2rem;
-        padding: 0.5rem 1rem;
-    }
 
     .tagline {
-        font-size: 1.2rem;
+        font-size: var(--font-size-xxsmall);
     }
 }

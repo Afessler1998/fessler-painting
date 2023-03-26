@@ -1,20 +1,15 @@
-/*REMOVE THIS BEFORE PUBLISHING SITE*/
-.underConstruction {
-    font-family: var(--font-family-primary);
-    font-size: var(--font-size-xlarge);
-}
-
 .mainSection {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: "main-paragraph service-section-1 service-section-2";
+    gap: 3rem;
     padding: 0 4rem 2rem 4rem;
 }
 
 .mainParagraph {
     font-family: var(--font-family-secondary);
     font-size: var(--font-size-medium);
-    flex: 2;
+    grid-area: main-paragraph;
 }
 
 .contactLink {
@@ -25,7 +20,16 @@
     border-radius: 5px;
     box-shadow: 0px 5px 10px 0px rgba(91, 91, 91, 0.2);
     transition-duration: 0.2s;
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.serviceSection:nth-of-type(1) {
+    grid-area: service-section-1;
+}
+
+.serviceSection:nth-of-type(2) {
+    grid-area: service-section-2;
 }
 
 .serviceSection:hover {
@@ -41,7 +45,12 @@
 }
 
 .serviceSectionTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
+    flex-grow: 1;
 }
 
 .sectionHeading {
@@ -54,14 +63,113 @@
     font-size: var(--font-size-medium);
 }
 
-@media only screen and (max-width: 768px) {
+.buttonPositioner {
+    margin-top: auto;
+    width: 100%;
+}
+
+.serviceSectionButton {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    background-color: var(--color-accent-500);
+    color: var(--color-white);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    box-shadow: var(--color-accent-900) 0px 2px 5px;
+    transition-duration: 0.3s;
+    margin-top: 2rem;
+}
+
+.serviceSectionButton:hover {
+    color: var(--color-white);
+    transition-duration: 0.3s;
+    transform: translate(0px, -4px);
+    box-shadow: var(--color-accent-900) 0px 4px 5px;
+}
+
+.serviceSectionButton:active {
+    color: var(--color-white);
+    transition-duration: 0.15s;
+    transform: translate(0px, -1px);
+    box-shadow: var(--color-accent-900) 0px 2px 5px;
+}
+
+.buttonArrow {
+    width: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
     .mainSection {
-        flex-direction: column;
+        grid-template-columns: 3fr 2fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas: "main-paragraph service-section-1 service-section-2"
     }
 }
 
-@media screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
+    .mainSection {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+                            "main-paragraph main-paragraph"
+                            "service-section-1 service-section-2";
+    }
+
+    .mainParagraph {
+        font-size: var(--font-size-small);
+    }
+
+    .sectionHeading {
+        font-size: var(--font-size-medium);
+    }
+
+    .sectionDescription {
+        font-size: var(--font-size-small);
+    }
+
+    .serviceSectionButton {
+        font-size: var(--font-size-medium);
+    }
+}
+
+@media screen and (max-width: 493px) {
     .mainSection {
         padding: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "main-paragraph"
+                            "service-section-1"
+                            "service-section-2";
+    }
+
+    .mainParagraph {
+        font-size: var(--font-size-xsmall);
+    }
+
+    .sectionHeading {
+        font-size: var(--font-size-medium);
+    }
+
+    .sectionDescription {
+        font-size: var(--font-size-xsmall);
+    }
+    
+    .serviceSectionImg {
+        height: 321px;
+    }
+
+    .serviceSectionButton {
+        font-size: var(--font-size-small);
+    }
+}
+
+@media screen and (max-width: 375px) {    
+    .serviceSectionImg {
+        height: 250px;
     }
 }
