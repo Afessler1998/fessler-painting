@@ -69,7 +69,7 @@
     grid-template-columns: 3fr 2fr 2fr;
     grid-template-areas: "main-paragraph service-section-1 service-section-2";
     gap: 3rem;
-    padding: 0 4rem 2rem 4rem;
+    padding: 0 4rem 1rem 4rem;
 }
 
 .mainParagraph {
@@ -214,11 +214,10 @@
 
     .ctaButton {
         font-size: var(--font-size-small);
-        padding: 0.5rem 1rem;
     }
 
     .mainSection {
-        padding: 2rem;
+        padding: 0 2rem 1rem 2rem;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "main-paragraph"
@@ -245,7 +244,7 @@
 
 @media screen and (max-width: 493px) {
     .ctaContainer {
-        margin-bottom: 0;
+        margin-bottom: 1rem;
     }
 
     .ctaBox {
@@ -263,6 +262,7 @@
 
     .ctaButton {
         font-size: var(--font-size-small);
+        padding: 0.5rem 1rem;
     }
 
     .ctaImg {
