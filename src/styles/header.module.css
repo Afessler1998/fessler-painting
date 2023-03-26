@@ -6,7 +6,7 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    backdrop-filter: blur(0.6px);
+    backdrop-filter: blur(0.7px);
     z-index: 1;
     animation: fadeInFromNone 0.3s ease-in;
 }
@@ -84,8 +84,8 @@
     gap: 0.5rem;
 }
 
-.arrowRight {
-    width: 3rem;
+.brushstroke {
+    display: none;
 }
 
 .navButton {
@@ -175,7 +175,7 @@
         flex-direction: column;
         gap: 0rem;
         background-color: var(--color-white);;
-        width: 60%;
+        width: 40%;
         height: 100%;
         transition: 0.3s;
         box-shadow:
@@ -193,8 +193,17 @@
         width: 100%;
     }
 
+    .brushstroke {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        width: 15rem;
+    }
+
     .navButton, .selectedNavButton {
         font-size: var(--font-size-medium);
+        z-index: 2;
+        margin-left: 5rem;
     }
 
     .menu, .menuActive {

@@ -22,15 +22,19 @@ const header = () => {
                     <ul className={active ? styles.navListActive : styles.navList}>
                         <li className={styles.navItem}>
                             <div className={pathname === "/" ? styles.selectedNavButton : styles.navButton}><Link href={"/"}>Home</Link></div>
+                            <img src="/brushstroke.svg" alt="brushstroke" className={styles.brushstroke} />
                         </li>
                         <li className={styles.navItem}>
                             <div className={pathname === "/interior-services" ? styles.selectedNavButton : styles.navButton}><Link href={"/interior-services"}>Interior</Link></div>
+                            <img src="/brushstroke.svg" alt="brushstroke" className={styles.brushstroke} />
                         </li>
                         <li className={styles.navItem}>
                             <div className={pathname === "/exterior-services" ? styles.selectedNavButton : styles.navButton}><Link href={"/exterior-services"}>Exterior</Link></div>
+                            <img src="/brushstroke.svg" alt="brushstroke" className={styles.brushstroke} />
                         </li>
                         <li className={styles.navItem}>
                             <div className={pathname === "/why-us" ? styles.selectedNavButton : styles.navButton}><Link href={"/why-us"}>Why us?</Link></div>
+                            <img src="/brushstroke.svg" alt="brushstroke" className={styles.brushstroke} />
                         </li>
                     </ul>
                     <div className={active ? styles.menuActive : styles.menu} onClick={() => {
