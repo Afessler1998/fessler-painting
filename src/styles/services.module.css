@@ -42,6 +42,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .mainHeading {
+        font-size: var(--font-size-medium);
+    }
+    
     .mainParagraph {
         font-size: var(--font-size-small);
     }
@@ -53,6 +57,10 @@
     .serviceHeading {
         font-size: var(--font-size-medium);
     }
+
+    .serviceDescription {
+        font-size: var(--font-size-small);
+    }
 }
 
 @media screen and (max-width: 493px) {
@@ -62,5 +70,21 @@
 
     .servicesContainer {
         padding: 1rem 2rem;
+    }
+
+    .mainHeading {
+        font-size: var(--font-size-small);
+    }
+
+    .mainParagraph {
+        font-size: var(--font-size-xsmall);
+    }
+
+    .serviceHeading {
+        font-size: var(--font-size-small);
+    }
+
+    .serviceDescription {
+        font-size: var(--font-size-xsmall);
     }
 }

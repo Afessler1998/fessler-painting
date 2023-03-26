@@ -144,7 +144,7 @@
     }
 
     .sectionHeading {
-        font-size: var(--font-size-medium);
+        font-size: var(--font-size-small);
     }
 
     .sectionDescription {
