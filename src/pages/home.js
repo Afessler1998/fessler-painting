@@ -25,7 +25,7 @@ const home = () => {
                     <div className={styles.serviceSection}>
                         <img src="/stock-photo-home-interior.jpg" alt="home interior" className={styles.serviceSectionImg} />
                         <div className={styles.serviceSectionTextContainer}>
-                            <h2 className={styles.sectionHeading}>Interior</h2>
+                            <h2 className={styles.sectionHeading}>Interior Painting</h2>
                             <p className={styles.sectionDescription}>
                                 Transform the look and feel of your space, making it more attractive, welcoming, and inviting.
                                 Whether you want to create a cozy and intimate atmosphere or a bright and modern space,
@@ -44,7 +44,7 @@ const home = () => {
                     <div className={styles.serviceSection}>
                         <img src="/stock-photo-home-exterior.jpg" alt="home exterior" className={styles.serviceSectionImg} />
                         <div className={styles.serviceSectionTextContainer}>
-                            <h2 className={styles.sectionHeading}>Exterior</h2>
+                            <h2 className={styles.sectionHeading}>Exterior Painting</h2>
                             <p className={styles.sectionDescription}>
                                 Exterior painting can enhance the curb appeal and overall value of your property while protecting it
                                 from the elements. A fresh coat of paint can update the look of your home or business,

@@ -1,6 +1,6 @@
 .mainSection {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 3fr 2fr 2fr;
     grid-template-areas: "main-paragraph service-section-1 service-section-2";
     gap: 3rem;
     padding: 0 4rem 2rem 4rem;
@@ -101,14 +101,6 @@
 
 .buttonArrow {
     width: 3rem;
-}
-
-@media screen and (max-width: 1024px) {
-    .mainSection {
-        grid-template-columns: 3fr 2fr 2fr;
-        grid-template-rows: auto;
-        grid-template-areas: "main-paragraph service-section-1 service-section-2"
-    }
 }
 
 @media only screen and (max-width: 768px) {

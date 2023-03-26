@@ -13,8 +13,26 @@
     font-family: var(--font-family-secondary);
 }
 
+@media screen and (max-width: 768px) {
+    .mainHeading {
+        font-size: var(--font-size-medium);
+    }
+
+    .mainParagraph {
+        font-size: var(--font-size-small);
+    }
+}
+
 @media screen and (max-width: 493px) {
     .mainTextContainer {
         padding: 2rem 2rem;
+    }
+
+    .mainHeading {
+        font-size: var(--font-size-small);
+    }
+
+    .mainParagraph {
+        font-size: var(--font-size-xsmall);
     }
 }
