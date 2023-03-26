@@ -175,7 +175,7 @@
         flex-direction: column;
         gap: 0rem;
         background-color: var(--color-white);;
-        width: 40%;
+        width: 50%;
         height: 100%;
         transition: 0.3s;
         box-shadow:
@@ -231,7 +231,7 @@
     }
 
     .headerBottom {
-        padding: 1rem 2rem;
+        padding: 1rem 2rem 0 2rem;
     }
 
     .heading {
