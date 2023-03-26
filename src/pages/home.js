@@ -8,6 +8,9 @@ const home = () => {
     return (
         <>
             <Header />
+                <div className={styles.ctaContainer}>
+                    <img src="/stock-photo-home-exterior-2.png" alt="home exterior" className={styles.ctaImg} />
+                </div>
                 <div className={styles.mainSection}>
                     <p className={styles.mainParagraph}>
                     At Fessler Painting, we specialize in transforming walls and spaces with our interior and exterior painting services.

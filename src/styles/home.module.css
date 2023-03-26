@@ -1,3 +1,11 @@
+.ctaContainer {
+    margin-bottom: 4rem;
+}
+
+.ctaImg {
+    width: 100%;
+}
+
 .mainSection {
     display: grid;
     grid-template-columns: 3fr 2fr 2fr;
