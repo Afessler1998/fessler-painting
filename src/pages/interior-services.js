@@ -6,7 +6,7 @@ import styles from '../styles/services.module.css'
 
 const interiorServices = () => {
     return (
-        <>
+        <div className="spacingWrapper">
             <Header />
             <div className={styles.mainTextContainer}>
                 <h2 className={styles.mainHeading}>Interior Painting Services</h2>
@@ -96,7 +96,7 @@ const interiorServices = () => {
                 </div>
             </div>
             <Footer />
-        </>
+        </div>
     );
 };
 

@@ -6,7 +6,7 @@ import styles from '../styles/home.module.css'
 
 const home = () => {
     return (
-        <>
+        <div className="spacingWrapper">
             <Header />
                 <div className={styles.ctaContainer}>
                     <div className={styles.ctaBox}>
@@ -74,7 +74,7 @@ const home = () => {
                     </div>
                 </div>
             <Footer />
-        </>
+        </div>
     );
 };
 

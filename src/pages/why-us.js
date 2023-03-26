@@ -5,7 +5,7 @@ import styles from '../styles/why-us.module.css'
 
 const whyUs = () => {
     return (
-        <>
+        <div className="spacingWrapper">
             <Header />
             <div className={styles.mainTextContainer}>
                 <h2 className={styles.mainHeading}>Why us?</h2>
@@ -22,7 +22,7 @@ const whyUs = () => {
                 </p>
             </div>
             <Footer />
-        </>
+        </div>
     );
 };
 

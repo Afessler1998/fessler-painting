@@ -56,6 +56,12 @@ body {
     height: 100%;
 }
 
+.spacingWrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 ul[class],
 ol[class] {
     list-style: none;

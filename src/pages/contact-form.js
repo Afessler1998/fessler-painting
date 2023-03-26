@@ -79,7 +79,7 @@ const contactForm = () => {
     }
 
     return (
-        <>
+        <div className="spacingWrapper">
             <Header />
             <form onSubmit={handleSubmit} className={styles.formContainer}>
                 <label htmlFor="firstName" className={styles.label}>Name *</label>
@@ -105,7 +105,7 @@ const contactForm = () => {
                 {firstName && <p className={styles.successMsg}>Your contact info has been received, thank you for reaching out {firstName}!</p>}
             </form>
             <Footer />
-        </>
+        </div>
     );
 };
 
