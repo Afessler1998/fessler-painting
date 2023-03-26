@@ -32,7 +32,13 @@
     font-family: var(--font-family-primary);
     font-size: var(--font-size-medium);
     width: 100%;
-    position: relative;
+    position: fixed;
+    background-color: var(--color-white);
+    z-index: 3;
+}
+
+.spacer {
+    height: 6rem;
 }
 
 .headerTop {
@@ -139,7 +145,7 @@
 
 .menu, .menuActive {
     display: none;
-    z-index: 2;
+    z-index: 4;
 }
 
 .menuBar {

@@ -1,17 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import styles from "../styles/header.module.css"
 
 const header = () => {
     const [active, setActive] = useState(false);
+    const [height, setHeight] = useState(0);
+    const ref = useRef(null);
     const router = useRouter();
     const { pathname } = router;
+
+    useEffect(() => {
+        setHeight(ref.current.offsetHeight);
+    }, []);
 
     return (
         <>  
             <div onClick={() => setActive(!active)} className={active ? styles.pageMaskActive : styles.pageMask}></div>
-            <header className={styles.header}>
+            <header className={styles.header} ref={ref}>
                 <div className={styles.headerTop}>
                     <h1 className={styles.heading}><Link href="/">Fessler Painting</Link></h1>
                     <img src="/fessler-painting-logo.svg" alt="Fessler Painting Logo" className={styles.headerLogo} />
@@ -46,6 +52,7 @@ const header = () => {
                     </div>
                 </div>
             </header>
+            <div style={{height}} />
         </>
     );
 };
