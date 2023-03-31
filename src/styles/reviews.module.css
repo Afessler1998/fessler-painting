@@ -1,0 +1,85 @@
+.heading {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-xlarge);
+    text-align: center;
+    margin-top: 4rem;
+    vertical-align: bottom;
+}
+
+.reviewsContainer {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-medium);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.review {
+    display: grid;
+    flex-grow: 1;
+    grid-template-columns: fit-content(100%) 1fr;
+    grid-template-rows: min-content min-content auto;
+    grid-template-areas: "profile-picture name"
+                         "rating rating"
+                         "comment comment";
+    background-color: var(--color-neutral-200);
+    opacity: 0.8;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.profilePicture {
+    width: 5rem;
+    grid-area: profile-picture;
+    align-self: center;
+}
+
+.name {
+    grid-area: name;
+    text-align: left;
+    font-weight: bold;
+    margin: auto 0 auto 1.5rem;
+}
+
+.rating {
+    grid-area: rating;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    align-self: center;
+}
+
+.star {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.comment {
+    grid-area: comment;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: var(--font-size-large);
+        margin-top: 2rem;
+    }
+    .reviewsContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 493px) {
+    .heading {
+        font-size: var(--font-size-medium);
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
+}

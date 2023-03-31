@@ -70,7 +70,7 @@
     grid-template-columns: 3fr 2fr 2fr;
     grid-template-areas: "main-paragraph service-section-1 service-section-2";
     gap: 2rem;
-    padding: 0 4rem 2rem 4rem;
+    padding: 0 4rem;
 }
 
 .mainParagraph {
@@ -218,7 +218,7 @@
     }
 
     .mainSection {
-        padding: 1rem 2rem 2rem 2rem;
+        padding: 1rem 2rem 0 2rem;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "main-paragraph"

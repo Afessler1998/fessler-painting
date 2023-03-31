@@ -1,5 +1,5 @@
 .mainTextContainer {
-    padding: 0 4rem 2rem 4rem;
+    padding: 0 4rem;
 }
 
 .mainHeading {
@@ -14,6 +14,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .mainTextContainer {
+        padding: 0 2rem;
+    }
+
     .mainHeading {
         font-size: var(--font-size-medium);
     }
@@ -24,10 +28,6 @@
 }
 
 @media screen and (max-width: 493px) {
-    .mainTextContainer {
-        padding: 0 2rem;
-    }
-
     .mainHeading {
         font-size: var(--font-size-small);
     }

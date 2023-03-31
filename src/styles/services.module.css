@@ -21,7 +21,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    padding: 1rem 4rem;
+    padding: 1rem 4rem 4rem 4rem;
 }
 
 .service {
@@ -42,6 +42,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .mainTextContainer {
+        padding: 0 2rem 1rem 2rem;
+    }
+
     .mainHeading {
         font-size: var(--font-size-medium);
     }
@@ -52,6 +56,7 @@
 
     .servicesContainer {
         grid-template-columns: 1fr;
+        padding: 1rem 2rem 2rem 2rem;
     }
 
     .serviceHeading {
@@ -64,14 +69,6 @@
 }
 
 @media screen and (max-width: 493px) {
-    .mainTextContainer {
-        padding: 0 2rem;
-    }
-
-    .servicesContainer {
-        padding: 1rem 2rem;
-    }
-
     .mainHeading {
         font-size: var(--font-size-small);
     }

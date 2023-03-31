@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import Reviews from '../components/reviews'
 import styles from '../styles/why-us.module.css'
 
 const whyUs = () => {
@@ -21,6 +22,7 @@ const whyUs = () => {
                     "Transforming walls, transforming spaces".
                 </p>
             </div>
+            <Reviews />
             <Footer />
         </div>
     );

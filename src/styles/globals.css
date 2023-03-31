@@ -43,6 +43,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
+    min-width: 100%;
 }
 
 body {
