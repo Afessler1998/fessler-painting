@@ -11,6 +11,7 @@
     padding: 4rem;
     margin-left: 4rem;
     width: 48%;
+    min-height: fit-content;
 }
 
 .ctaHeading {

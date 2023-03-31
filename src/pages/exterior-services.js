@@ -50,19 +50,6 @@ const exteriorServices = () => {
                         you can transform your outdoor space into a beautiful and inviting area that you can enjoy for years to come.
                     </p>
                 </div>
-                <div className={styles.service}>
-                    <h3 className={styles.serviceHeading}>Power Washing</h3>
-                    <p className={styles.serviceDescription}>
-                        Power washing is an effective and efficient way to deep clean your property's exterior surfaces.
-                        Dirt, grime, and mildew can accumulate on your home, driveway, walkways, and other surfaces over time,
-                        making them look dull and dirty. Power washing uses high-pressure water streams to remove these stubborn stains,
-                        leaving your property looking fresh and new. In addition to improving your property's appearance,
-                        power washing can also help to prevent the growth of mold and mildew, which can be harmful to your health.
-                        Our professional power washing services are safe and effective, and we can customize our approach to meet
-                        your specific needs. Whether you need your home's exterior washed, your driveway cleaned, or your deck
-                        revitalized, we have the expertise and equipment to get the job done right.
-                    </p>
-                </div>
             </div>
             <Footer />
         </div>
