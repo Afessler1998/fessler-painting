@@ -15,7 +15,7 @@ const home = () => {
                         <p className={styles.ctaText}>
                             Proudly serving the Des Moines area with unparalleled expertise and craftsmanship
                         </p>
-                        <Link href="https://forms.gle/BMsHCMBF1pRc11mB9">
+                        <Link href="https://forms.gle/59SDL2KS3SamFyDJ7">
                             <div className={styles.ctaButton}>Get your free estimate!</div>
                         </Link>
                     </div>
@@ -32,7 +32,7 @@ const home = () => {
                     combined with expert techniques and attention to detail, to ensure that our clients' visions are brought to life.
                     With Fessler Painting, you can trust that your painting project is in good hands, and we will work closely with you
                     to ensure your complete satisfaction. To get a FREE estimate, give us a call or fill
-                    out <span className={styles.contactLink}><Link href="https://forms.gle/BMsHCMBF1pRc11mB9">this form</Link></span> and
+                    out <span className={styles.contactLink}><Link href="https://forms.gle/59SDL2KS3SamFyDJ7">this form</Link></span> and
                     get back to you within two business days.
                     </p>
                     <div className={styles.serviceSection}>
