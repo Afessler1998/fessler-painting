@@ -269,6 +269,10 @@
         height: 250px;
     }
 
+    .mainSection {
+        margin-bottom: 1rem;
+    }
+
     .mainParagraph {
         font-size: var(--font-size-xsmall);
     }
