@@ -6,6 +6,7 @@
     font-size: var(--font-size-large);
     font-family: var(--font-family-primary);
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .mainParagraph {
@@ -48,6 +49,7 @@
 
     .mainHeading {
         font-size: var(--font-size-medium);
+        margin-bottom: 0.5rem;
     }
     
     .mainParagraph {

@@ -2,12 +2,19 @@ import React from 'react'
 import Link from 'next/link'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import Hero from '../components/hero'
 import styles from '../styles/services.module.css'
 
 const interiorServices = () => {
     return (
         <div className="spacingWrapper">
             <Header />
+            <Hero
+                heading={"Transform"}
+                text={"your space with our full suite of interior painting services"}
+                img={"/stock-photo-home-interior-2.jpg"}
+                imgAlt={"kitchen interior"}
+            />
             <div className={styles.mainTextContainer}>
                 <h2 className={styles.mainHeading}>Interior Painting Services</h2>
                 <p className={styles.mainParagraph}>
