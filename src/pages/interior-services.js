@@ -21,7 +21,7 @@ const interiorServices = () => {
                     they need when working with a contractor. Choose Fessler Painting for your interior painting needs,
                     and let us help you transform your space into the beautiful and inviting home you've always dreamed of.
                     To get a FREE estimate, give us a call or fill
-                    out <Link href={"/contact-form"}><span className={styles.contactLink}>this form</span></Link> and
+                    out <Link href={"https://forms.gle/BMsHCMBF1pRc11mB9"}><span className={styles.contactLink}>this form</span></Link> and
                     we'll get back to you within two busines days.
                 </p>
             </div>
