@@ -68,11 +68,20 @@
         font-size: var(--font-size-large);
         margin-top: 2rem;
     }
+    
     .reviewsContainer {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 2rem;
         padding: 2rem;
+    }
+
+    .name {
+        font-size: var(--font-size-medium);
+    }
+
+    .review {
+        font-size: var(--font-size-small);
     }
 }
 
@@ -81,5 +90,13 @@
         font-size: var(--font-size-medium);
         margin-top: 1rem;
         padding: 0 1rem;
+    }
+
+    .name {
+        font-size: var(--font-size-small);
+    }
+
+    .review {
+        font-size: var(--font-size-xsmall);
     }
 }
