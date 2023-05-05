@@ -15,7 +15,7 @@ const hero = ({ heading, text, img, imgAlt }) => {
                     <div className={styles.ctaButton}>Get your free estimate!</div>
                 </Link>
             </div>
-            <Image src={img} alt={imgAlt} width={5000} height={5000} loading='eager' className={styles.ctaImg} />
+            <Image src={img} alt={imgAlt} width={1476} height={613} loading='eager' className={styles.ctaImg} />
         </div>
     );
 };

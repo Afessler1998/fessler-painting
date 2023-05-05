@@ -36,7 +36,7 @@ const home = () => {
                 get back to you within two business days.
                 </p>
                 <div className={styles.serviceSection}>
-                    <Image src={homeInteriorImg} alt="home interior" width={500} height={500} className={styles.serviceSectionImg} />   
+                    <Image src={homeInteriorImg} alt="home interior" width={612} height={420} className={styles.serviceSectionImg} />   
                     <div className={styles.serviceSectionTextContainer}>
                         <h2 className={styles.sectionHeading}>Interior Painting</h2>
                         <p className={styles.sectionDescription}>
@@ -55,7 +55,7 @@ const home = () => {
                     </div>
                 </div>
                 <div className={styles.serviceSection}>
-                    <Image src={homeExteriorImg} alt="home exterior" width={500} height={500} className={styles.serviceSectionImg} />
+                    <Image src={homeExteriorImg} alt="home exterior" width={612} height={420} className={styles.serviceSectionImg} />
                     <div className={styles.serviceSectionTextContainer}>
                         <h2 className={styles.sectionHeading}>Exterior Painting</h2>
                         <p className={styles.sectionDescription}>

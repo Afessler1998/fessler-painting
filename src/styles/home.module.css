@@ -41,7 +41,8 @@
     object-fit: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    height: 250px;
+    height: auto;
+    max-height: 250px;
 }
 
 .serviceSectionTextContainer {
