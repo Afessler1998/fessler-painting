@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image';
 import styles from '../styles/hero.module.css'
 
 const hero = ({ heading, text, img, imgAlt }) => {
@@ -14,7 +15,7 @@ const hero = ({ heading, text, img, imgAlt }) => {
                     <div className={styles.ctaButton}>Get your free estimate!</div>
                 </Link>
             </div>
-            <img src={img} alt={imgAlt} className={styles.ctaImg} />
+            <Image src={img} alt={imgAlt} width={5000} height={5000} className={styles.ctaImg} />
         </div>
     );
 };

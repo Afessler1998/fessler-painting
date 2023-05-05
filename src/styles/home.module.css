@@ -101,6 +101,8 @@
 
 .buttonArrow {
     width: 3rem;
+    max-height: 3rem;
+    max-width: 3rem;
 }
 
 @media screen and (max-width: 1080px) {

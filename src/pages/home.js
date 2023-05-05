@@ -1,5 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+import homeExteriorImg2 from '../../public/stock-photo-home-exterior-2.png'
+import homeExteriorImg from '../../public/stock-photo-home-exterior.jpg'
+import homeInteriorImg from '../../public/stock-photo-home-interior.jpg'
+import arrowRightSvg from '../../public/arrow-right.svg'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Hero from '../components/hero'
@@ -13,7 +18,7 @@ const home = () => {
             <Hero
                 heading="Fessler Painting"
                 text="Proudly serving the Des Moines area with unparalleled expertise and craftsmanship"
-                img="/stock-photo-home-exterior-2.png"
+                img={homeExteriorImg2}
                 imgAlt="home exterior"
             />
             <div className={styles.mainSection}>
@@ -31,7 +36,7 @@ const home = () => {
                 get back to you within two business days.
                 </p>
                 <div className={styles.serviceSection}>
-                    <img src="/stock-photo-home-interior.jpg" alt="home interior" className={styles.serviceSectionImg} />
+                    <Image src={homeInteriorImg} alt="home interior" width={500} height={500} className={styles.serviceSectionImg} />   
                     <div className={styles.serviceSectionTextContainer}>
                         <h2 className={styles.sectionHeading}>Interior Painting</h2>
                         <p className={styles.sectionDescription}>
@@ -43,14 +48,14 @@ const home = () => {
                             <Link href={"/interior-services"}>
                                 <div className={styles.serviceSectionButton}>
                                     <span>Interior Services</span>
-                                    <img src="/arrow-right.svg" alt="arrow right" className={styles.buttonArrow} />
+                                    <Image src={arrowRightSvg} alt="arrow right" width={500} height={500} className={styles.buttonArrow} />
                                 </div>
                             </Link>
                         </div>
                     </div>
                 </div>
                 <div className={styles.serviceSection}>
-                    <img src="/stock-photo-home-exterior.jpg" alt="home exterior" className={styles.serviceSectionImg} />
+                    <Image src={homeExteriorImg} alt="home exterior" width={500} height={500} className={styles.serviceSectionImg} />
                     <div className={styles.serviceSectionTextContainer}>
                         <h2 className={styles.sectionHeading}>Exterior Painting</h2>
                         <p className={styles.sectionDescription}>
@@ -62,7 +67,7 @@ const home = () => {
                             <Link href={"/exterior-services"}>
                                 <div className={styles.serviceSectionButton}>
                                     <span>Exterior Services</span>
-                                    <img src="/arrow-right.svg" alt="arrow right" className={styles.buttonArrow} />
+                                    <Image src={arrowRightSvg} alt="arrow right" width={500} height={500} className={styles.buttonArrow} />
                                 </div>
                             </Link>
                         </div>
